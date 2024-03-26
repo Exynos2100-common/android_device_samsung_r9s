@@ -31,4 +31,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r9s/proprietary/vendor/firmware/s3908_r9.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/s3908_r9.bin \
     vendor/samsung/r9s/proprietary/vendor/firmware/s3908_r9.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/s3908_r9.bin \
     vendor/samsung/r9s/proprietary/vendor/firmware/s3908_r9_slsi.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/s3908_r9_slsi.bin \
-    vendor/samsung/r9s/proprietary/vendor/firmware/s3908_r9_slsi.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/s3908_r9_slsi.bin
+    vendor/samsung/r9s/proprietary/vendor/firmware/s3908_r9_slsi.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/s3908_r9_slsi.bin \
+    $(LOCAL_PATH)/s3908_m52xq.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/s3908_m52xq.bin \
+    $(LOCAL_PATH)/s3908_m52xq.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/s3908_m52xq.bin 
+
+# udfps init script
+
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/configs/init/init.r9s.udfps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.r9s.udfps.rc

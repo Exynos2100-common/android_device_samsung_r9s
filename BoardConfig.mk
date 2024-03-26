@@ -25,7 +25,11 @@ DEVICE_PATH := device/samsung/r9s
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Display
-TARGET_SCREEN_DENSITY := 410
+TARGET_SCREEN_DENSITY := 360
+
+# Fingerprint
+TARGET_SEC_FP_HAS_OPTICAL_UDFPS := true
+
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/r9s

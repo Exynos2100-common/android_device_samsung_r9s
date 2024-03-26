@@ -26,8 +26,9 @@ INTERNAL_RECOVERY_RAMDISK_FILES_TIMESTAMP := $(call intermediates-dir-for,PACKAG
 
 $(RECOVERY_KERNEL_MODULES): $(INSTALLED_KERNEL_TARGET)
 	@echo "Copying kernel modules to recovery ramdisk: $@"
-	@mkdir -p $(dir $@)
+	@mkdir -p $(dir $@)/lib/modules/
 	cp -r $(TARGET_VENDOR_RAMDISK_OUT)/lib/ $(TARGET_RECOVERY_ROOT_OUT)/
+
 
 $(INTERNAL_RECOVERY_RAMDISK_FILES_TIMESTAMP): $(RECOVERY_KERNEL_MODULES)
 endif
