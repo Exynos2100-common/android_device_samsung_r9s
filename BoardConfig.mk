@@ -32,7 +32,6 @@ TARGET_SEC_FP_HAS_OPTICAL_UDFPS := true
 
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/samsung/r9s
 TARGET_KERNEL_CONFIG := exynos2100-r9sxxx_defconfig
 
 # Kernel modules
