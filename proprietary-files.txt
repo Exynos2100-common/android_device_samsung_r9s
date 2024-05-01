@@ -60,6 +60,7 @@ vendor/firmware/setfile_hi1336.bin
 vendor/firmware/setfile_hi847.bin
 vendor/firmware/setfile_imx258.bin
 vendor/firmware/setfile_imx616.bin
+vendor/firmware/calliope_sram.bin
 
 # GPS
 vendor/etc/gnss/gps.xml

@@ -9,7 +9,7 @@
 function blob_fixup() {
     case "${1}" in
         vendor/lib*/libsec-ril*.so)
-            "${PATCHELF}" --replace-needed libril.so libril-samsung.so "${2}"
+	    xxd -p -c0 "${2}" | sed "s/800e40f9820c8052e10316aae30315aa/800e40f9820c8052e10316aa030080d2/g" | xxd -r -p > "${2}".patched
             ;;
         vendor/lib*/sensors.*.so)
             "${PATCHELF}" --replace-needed libutils.so libutils-v32.so "${2}"
