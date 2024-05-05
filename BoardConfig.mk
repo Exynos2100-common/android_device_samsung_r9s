@@ -27,13 +27,12 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 # Display
 TARGET_SCREEN_DENSITY := 360
 
-# Fingerprint
-TARGET_SEC_FP_HAS_OPTICAL_UDFPS := true
-
-
 # Kernel
 TARGET_KERNEL_CONFIG := exynos2100-r9sxxx_defconfig
 
 # Kernel modules
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD)
+
+# vendor.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
