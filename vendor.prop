@@ -1,4 +1,4 @@
 ## Fingerprint
 ro.vendor.fingerprint.type=udfps_optical
-ro.vendor.fingerprint.sensor_location=720|2400|150
+ro.vendor.fingerprint.sensor_location=540|2000|120
 ro.vendor.fingerprint.request_touch_event=true
