@@ -1,2 +1,0 @@
-on init
-	chown system system /sys/class/lcd/panel/hbm_override

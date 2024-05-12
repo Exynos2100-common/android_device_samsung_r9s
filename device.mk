@@ -38,4 +38,4 @@ PRODUCT_COPY_FILES += \
 # udfps init script
 
 PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/configs/init/init.r9s.udfps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.r9s.udfps.rc
+   $(LOCAL_PATH)/configs/init/init.fingerprint.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fingerprint.rc
