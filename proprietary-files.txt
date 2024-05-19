@@ -131,6 +131,3 @@ vendor/firmware/bcmdhd_mon.bin_b1
 vendor/firmware/bcmdhd_sta.bin_b1
 vendor/firmware/nvram.txt_1rh_es43_b1
 vendor/firmware/nvram.txt_CS01_semco_b1
-
-# RIL
-vendor/lib64/libril_sem.so
